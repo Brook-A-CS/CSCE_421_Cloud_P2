@@ -1,0 +1,42 @@
+services:
+  dev-server:
+    image: p2-con
+    ports:
+      - "8080:80"
+    volumes:
+      - ./main_website:/usr/share/nginx/html
+
+  unique-web-1:
+    image: p2-con
+    ports:
+      - "8081:80"
+    volumes:
+      - ./site1:/usr/share/nginx/html
+
+  unique-web-2:
+    image: p2-con
+    ports:
+      - "8082:80"
+    volumes:
+      - ./site2:/usr/share/nginx/html
+
+  unique-web-3:
+    image: p2-con
+    ports:
+      - "8083:80"
+    volumes:
+      - ./site3:/usr/share/nginx/html
+
+  unique-web-4:
+    image: p2-con
+    ports:
+      - "8084:80"
+    volumes:
+      - ./site4:/usr/share/nginx/html
+
+  unique-web-5:
+    image: p2-con
+    ports:
+      - "8085:80"
+    volumes:
+      - ./site5:/usr/share/nginx/html
