@@ -40,3 +40,30 @@ services:
       - "8085:80"
     volumes:
       - ./site5:/usr/share/nginx/html
+
+  exact-copy-1:
+    image: p2-con
+    ports:
+      - "8086:80"
+  
+  exact-copy-2:
+    image: p2-con
+    ports:
+      - "8087:80"
+  
+  exact-copy-3:
+    image: p2-con
+    ports:
+      - "8088:80"
+  
+  
+  exact-copy-4:
+    image: p2-con
+    ports:
+      - "8089:80"
+  
+  
+  exact-copy-5:
+    image: p2-con
+    ports:
+      - "8090:80"
